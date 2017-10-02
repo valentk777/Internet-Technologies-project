@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Muzikos bibliotekos XML versija -->
+<Fonoteka>
+  <autoriai>
+    <autorius>
+      <vardar></vardar>
+      <pavardė></pavardė>
+      <gimimoMetai></gimimoMetai>
+    </autorius>
+    <autorius>
+      <vardar></vardar>
+      <pavardė></pavardė>
+      <gimimoMetai></gimimoMetai> 
+    </autorius>
+  </autoriai>
+  <kompaktai>
+    <žanras pav ="Classic">
+      <kompaktas>
+        <pavadinimas></pavadinimas>
+        <autorius></autorius>
+        <išleidimoMetai></išleidimoMetai>
+        <kaina></kaina>
+      </kompaktas>
+    </žanras>
+    <žanras pav ="Pop">
+      <kompaktas>
+        <pavadinimas></pavadinimas>
+        <autorius></autorius>
+        <išleidimoMetai></išleidimoMetai>
+        <kaina></kaina>
+      </kompaktas>
+    </žanras>
+    <žanras pav ="Jazz">
+      <kompaktas>
+        <pavadinimas></pavadinimas>
+        <autorius></autorius>
+        <išleidimoMetai></išleidimoMetai>
+        <kaina></kaina>
+      </kompaktas>
+    </žanras>
+  </kompaktai> 
+</Fonoteka>
