@@ -130,6 +130,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Biblioteka_JSON.json" />
+    <Content Include="XML_for_XPath.xml" />
+    <Content Include="XPath.txt" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

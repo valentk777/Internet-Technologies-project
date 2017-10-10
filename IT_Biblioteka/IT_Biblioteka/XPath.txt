@@ -1,0 +1,22 @@
+﻿1) 
+/Diskografija/albumai/žanras[1]/ancestor::*
+/Diskografija/albumai/žanras[1]/descendant::*
+/Diskografija/albumai/žanras[1]/following::*
+/Diskografija/albumai/žanras[1]/preceding::*
+/Diskografija/albumai/žanras[1]/self::*
+
+/Diskografija/albumai/žanras[1]/following-sibling::*
+/Diskografija/albumai/žanras[1]/preceding-sibling::*
+
+2) rasti visus albumus, kuriu autorius yra 3 eileje
+//child::albumas[child::autorius[attribute::ref=(//child::autorius)[3]/@id]]/@* (grazina ju numerius, kad butu galima butu isitikint ar tuos rado)
+
+3)
+
+4)
+
+5)
+
+6)
+
+7)
