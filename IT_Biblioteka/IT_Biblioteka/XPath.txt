@@ -8,15 +8,127 @@
 /Diskografija/albumai/žanras[1]/following-sibling::*
 /Diskografija/albumai/žanras[1]/preceding-sibling::*
 
-2) rasti visus albumus, kuriu autorius yra 3 eileje
+2) 
+rasti visus albumus, kuriu autorius yra 3 eileje
 //child::albumas[child::autorius[attribute::ref=(//child::autorius)[3]/@id]]/@* (grazina ju numerius, kad butu galima butu isitikint ar tuos rado)
 
 3)
+rasti skaiciu zymiu, kurios turi atributus, kurie lygus a1.
+count(//child::*[@*="a1"])
 
+randa visas kainas ir jas susumuoja
+sum(//child::kaina)
 4)
+5<"KUKU" false, nes KUKU pavertus i string gauname NaN. bet jei 5< "8", tada true, nes stringas verciamas i skaiciu
+/descendant::išleidimoMetai[1] > 2011 FALSE, NES isleidomoMetai yra 2011
+/descendant::išleidimoMetai[1] > 2010 > 0 true, nes pirmas true = 1 ir 1> 0
+3 > 2 > 1 visada false, nes (3>2) = true = 1, 1>1 = false
+1 + //kaina - true() = "12.34" true. 1+ // kaina (ima pirma skaitine tekstine reiksme ir prie jos prideda 1 . tada - true () atima 1 ir tada konvertuoja i stringa i lygina)
 
 5)
+randa 3 autoriaus eileje varda i pavarde
+(/descendant::autorius/child::*)[3]/preceding-sibling::*/text()
+
+/descendant::autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+autorius
+
+/descendant::autorius/child::*
+vardas
+pavardė
+gimimoMetai
+mirtiesMetai
+vardas
+pavardė
+gimimoMetai
+mirtiesMetai
+vardas
+pavardė
+gimimoMetai
+mirtiesMetai
+vardas
+pavardė
+gimimoMetai
+mirtiesMetai
+vardas
+pavardė
+gimimoMetai
+mirtiesMetai
+vardas
+pavardė
+gimimoMetai
+mirtiesMetai
+vardas
+pavardė
+gimimoMetai
+mirtiesMetai
+vardas
+pavardė
+gimimoMetai
+mirtiesMetai
+vardas
+pavardė
+gimimoMetai
+mirtiesMetai
+vardas
+pavardė
+gimimoMetai
+mirtiesMetai
+vardas
+pavardė
+gimimoMetai
+mirtiesMetai
+vardas
+pavardė
+gimimoMetai
+mirtiesMetai
+
+(/descendant::autorius/child::*)[3]
+gimimoMetai
+
+(/descendant::autorius/child::*)[3]/preceding-sibling::*
+vardas
+pavardė
+
+(/descendant::autorius/child::*)[3]/preceding-sibling::*/text()
+#text : Josh
+#text : Groban
 
 6)
+ar aibe tuscia
+boolean(//kaina) = false()
 
+//kaina = "kaina kaina kaina kaina kaina kaina kaina kaina kaina kaina"			- false
+//kaina = true()																- true
+//kaina = 13																	- false
+//kaina = //autoriai															- false
+//albumai = //autoriai															- false
 7)
+//autorius > //autoriai															- false, nes number autorius ir autoriai = NaN
+count(//autorius) > count(//autoriai)											- true
+//kaina < //išleidimoMetai														- true, nes rado konkrecias skaitines reiskmes
