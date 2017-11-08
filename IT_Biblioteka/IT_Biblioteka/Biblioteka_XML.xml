@@ -1,9 +1,9 @@
 ﻿<!-- Muzikos bibliotekos XML versija -->
 <Diskografija 
-  xmlns="https://www.amazon.co.uk" 
+  xmlns="http://www.wikipedia.org" 
   xmlns:aut="http://www.wikipedia.org"
   xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="C:\Users\Valentinas-PC\source\repos\Internet-Technologies-project\IT_Biblioteka\IT_Biblioteka XMLSchema.xsd"
+  xsi:schemaLocation="http://www.wikipedia.org XMLSchema.xsd"
 >
   <aut:autoriai>
     <aut:autorius id="a1">

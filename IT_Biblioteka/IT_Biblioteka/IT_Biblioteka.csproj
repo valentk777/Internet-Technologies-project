@@ -132,6 +132,7 @@
     <Content Include="Biblioteka_JSON.json" />
     <Content Include="XML_for_XPath.xml" />
     <Content Include="XPath.txt" />
+    <Content Include="jsonSchema.json" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -186,6 +187,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
+      <UserProperties jsonSchema_1json__JSONSchema="" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

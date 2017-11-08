@@ -88,7 +88,8 @@
               "pavadinimas": "And the Waltz Goes On",
               "autorius": { "ref": "a6" },
               "isleidimoMetai": "2011",
-              "kaina": "12.34"
+              "kaina": "12.34",
+              "busena": "Perklausyta"
             },
             {
               "numeris": "72039",
@@ -105,7 +106,8 @@
                 { "ref": "a10" }
               ],
               "isleidimoMetai": "1987",
-              "kaina": "6.24"
+              "kaina": "6.24",
+              "busena": "Neperklausyta"
             }
           ]
         },

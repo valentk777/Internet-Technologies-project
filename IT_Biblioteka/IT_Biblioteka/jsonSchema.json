@@ -1,0 +1,67 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Diskografija",
+  "type": "object",
+  "properties": {
+      "autoriai": {
+        "type": "array",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "a[0-9][0-9]*",
+            "uniqueItems": true
+          },
+          "vardas": { "type": "string" },
+          "pavarde": {
+            "type": "string",
+            "pattern": "[A-Z].+"
+          },
+          "gimimoMetai": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "mirtiesMetai": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [ "id" ]
+      },
+    "albumai": {
+      "type": "object",
+      "zanras": {
+        "type": "array",
+        "properties": {
+          "stilius": { "type": "string" },
+          "text": {
+            "anyOf": [
+              { "type": "string" },
+              {
+                "type": "number",
+                "minimum": -1,
+                "maximum": 1
+              }
+            ]
+          },
+          "albumas": {
+            "type": "array",
+            "properties": {
+              "numeris": { "type": "number" },
+              "pavadinimas": { "type": "string" },
+              "autorius": { "$ref": "http://www.wikipedia.lt/autoriai" },
+              "isleidimoMetai": {
+                "type": "integer"
+              },
+              "kaina": { "type": "number" },
+              "busena": {
+                "type": "string",
+                "enum": [ "Neperklausyta", "Perklausyta" ]
+              }
+            },
+            "required": [ "numeris" ]
+          }
+        }
+      }
+    }
+  }
+}

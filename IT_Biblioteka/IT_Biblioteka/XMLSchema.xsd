@@ -3,7 +3,7 @@
   xmlns:aut="http://www.wikipedia.org" 
   attributeFormDefault="unqualified" 
   elementFormDefault="qualified" 
-  targetNamespace="https://www.amazon.co.uk" 
+  targetNamespace="http://www.wikipedia.org" 
   xmlns:xs="http://www.w3.org/2001/XMLSchema">
   
   <!--  simpleType -->
@@ -13,14 +13,14 @@
     </xs:restriction>
   </xs:simpleType>
 
-  <xs:simpleType name="isleidimoMetaiTipas">
+  <xs:simpleType name="skaiciuTipas">
     <xs:restriction base="xs:integer">
       <xs:pattern value="[0-9]{4}" />
     </xs:restriction>
   </xs:simpleType>
-
+    
   <xs:simpleType name="NumerisListTipas">
-    <xs:list itemType="xs:integer"/>
+    <xs:list itemType="aut:skaiciuTipas"/>
   </xs:simpleType>
 
   <!--  complexType su simpleContent -->
@@ -28,7 +28,7 @@
   <xs:complexType name="atlikejasTipas">
     <xs:simpleContent>
       <xs:extension base="aut:idTipas">
-        <xs:attribute name="aut:ref" type="aut:idTipas" use="required"/>
+        <xs:attribute name="ref" type="aut:idTipas" use="required"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -36,7 +36,7 @@
   <xs:complexType name="GrieztasNumerisListTipas">
     <xs:simpleContent>
       <xs:restriction base="aut:NumerisListTipas">
-        <xs:pattern value="[0-9]{4}"/>
+        <xs:minInclusive value="2"/>
       </xs:restriction>
     </xs:simpleContent>
   </xs:complexType>
@@ -55,8 +55,13 @@
     <xs:complexContent>
       <xs:restriction base="aut:autoriusTipas">
         <xs:sequence minOccurs="1">
-          <xs:element name="vardas" type="xs:string" minOccurs="1" maxOccurs="1"/>
-          <xs:element name="pavarde" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:choice>
+          <xs:sequence>
+            <xs:element name="vardas" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="pavarde" type="xs:string" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence> 
+          <xs:element name="Slapyvardis" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        </xs:choice>
           <xs:element name="gimimoMetai" type="xs:date" minOccurs="1" maxOccurs="1"/>
           <xs:element name="mirtiesMetai" type="xs:date" minOccurs="0" maxOccurs="1"/>
         </xs:sequence>
@@ -68,18 +73,23 @@
   <!--  pagrindine schema -->
   <xs:complexType name="albumasTipas">
     <xs:sequence>
-      <xs:element name="pavadinimas" type="aut:pavadinimasTipas" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="pavadinimas" type="xs:string" minOccurs="1" maxOccurs="1"/>
       <xs:element name="atlikejas" type="aut:atlikejasTipas" minOccurs="1" maxOccurs="1"/>
-      <xs:element name="isleidimoMetai" type="aut:isleidimoMetaiTipas" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="isleidimoMetai" type="aut:skaiciuTipas" minOccurs="0" maxOccurs="1"/>
       <xs:element name="kaina" type="xs:decimal" minOccurs="0" maxOccurs="1"/>
     </xs:sequence>
-    <xs:attribute name="numeris" type="aut:GrieztasNumerisListTipas" use="required"/>
+    <xs:attribute name="numeris" type="aut:NumerisListTipas" use="required"/>
   </xs:complexType>
 
   <xs:complexType name="autoriusTipas">
     <xs:sequence minOccurs="1">
-      <xs:element name="vardas" type="xs:string" minOccurs="1" maxOccurs="1"/>
-      <xs:element name="pavarde" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        <xs:choice>
+          <xs:sequence>
+            <xs:element name="vardas" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="pavarde" type="xs:string" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence> 
+          <xs:element name="Slapyvardis" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        </xs:choice>
       <xs:element name="gimimoMetai" type="xs:date" minOccurs="1" maxOccurs="1"/>
       <xs:element name="mirtiesMetai" type="xs:date" minOccurs="0" maxOccurs="1"/>
       <xs:element name="gimimoVieta" type="xs:string" minOccurs="0" maxOccurs="1"/>
