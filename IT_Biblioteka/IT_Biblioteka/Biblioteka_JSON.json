@@ -1,87 +1,85 @@
 ﻿{
   "Diskografija": {
-    "autoriai": {
-      "autorius": [
-        {
-          "id": "a1",
-          "vardas": "Josh",
-          "pavardė": "Groban",
-          "gimimoMetai": "02-27-1981"
-        },
-        {
-          "id": "a2",
-          "vardas": "John",
-          "pavardė": "Lennon",
-          "gimimoMetai": "10-9-1940",
-          "mirtiesMetai": "12-08-1980"
-        },
-        {
-          "id": "a3",
-          "vardas": "Lady",
-          "pavardė": "Gaga",
-          "gimimoMetai": "03-28-1986"
-        },
-        {
-          "id": "a4",
-          "vardas": "Tony",
-          "pavardė": "Bennett",
-          "gimimoMetai": "09-03-1926"
-        },
-        {
-          "id": "a5",
-          "vardas": "Miley",
-          "pavardė": "Cyrus",
-          "gimimoMetai": "11-23-1992"
-        },
-        {
-          "id": "a6",
-          "vardas": "Andre",
-          "pavardė": "Rieu",
-          "gimimoMetai": "10-01-1949"
-        },
-        {
-          "id": "a7",
-          "vardas": "Benny",
-          "pavardė": "Andersson",
-          "gimimoMetai": "12-16-1946"
-        },
-        {
-          "id": "a8",
-          "vardas": "Whitney",
-          "pavardė": "Houston",
-          "gimimoMetai": "08-09-1963",
-          "mirtiesMetai": "02-11-2012"
-        },
-        {
-          "id": "a9",
-          "vardas": "Freddie",
-          "pavardė": "Mercury",
-          "gimimoMetai": "09-05-1946",
-          "mirtiesMetai": "11-24-1991"
-        },
-        {
-          "id": "a10",
-          "vardas": "Montserrat",
-          "pavardė": "Caballé",
-          "gimimoMetai": "04-12-1933"
-        },
-        {
-          "id": "a11",
-          "vardas": "Michael",
-          "pavardė": "Jackson",
-          "gimimoMetai": "08-29-1958",
-          "mirtiesMetai": "06-25-2009"
-        },
-        {
-          "id": "a12",
-          "vardas": "Astrud",
-          "pavardė": "Gilberto",
-          "gimimoMetai": "03-29-1940"
-        }
-      ]
-    },
+    "autoriai": [
+      {
+        "id": "a1",
+        "vardas": "Josh",
+        "pavarde": "Groban",
+        "gimimoMetai": "02-27-1981"
+      },
+      {
+        "id": "a2",
+        "vardas": "John",
+        "pavarde": "Lennon",
+        "gimimoMetai": "10-9-1940",
+        "mirtiesMetai": "12-08-1980"
+      },
+      {
+        "id": "a3",
+        "vardas": "Lady",
+        "pavarde": "Gaga",
+        "gimimoMetai": "03-28-1986"
+      },
+      {
+        "id": "a4",
+        "vardas": "Tony",
+        "pavarde": "Bennett",
+        "gimimoMetai": "09-03-1926"
+      },
+      {
+        "id": "a5",
+        "vardas": "Miley",
+        "pavarde": "Cyrus",
+        "gimimoMetai": "11-23-1992"
+      },
+      {
+        "id": "a6",
+        "vardas": "Andre",
+        "pavarde": "Rieu",
+        "gimimoMetai": "10-01-1949"
+      },
+      {
+        "id": "a7",
+        "vardas": "Benny",
+        "pavarde": "Andersson",
+        "gimimoMetai": "12-16-1946"
+      },
+      {
+        "id": "a8",
+        "vardas": "Whitney",
+        "pavarde": "Houston",
+        "gimimoMetai": "08-09-1963",
+        "mirtiesMetai": "02-11-2012"
+      },
+      {
+        "id": "a9",
+        "vardas": "Freddie",
+        "pavarde": "Mercury",
+        "gimimoMetai": "09-05-1946",
+        "mirtiesMetai": "11-24-1991"
+      },
+      {
+        "id": "a10",
+        "vardas": "Montserrat",
+        "pavarde": "Caballé",
+        "gimimoMetai": "04-12-1933"
+      },
+      {
+        "id": "a11",
+        "vardas": "Michael",
+        "pavarde": "Jackson",
+        "gimimoMetai": "08-29-1958",
+        "mirtiesMetai": "06-25-2009"
+      },
+      {
+        "id": "a12",
+        "vardas": "Astrud",
+        "pavarde": "Gilberto",
+        "gimimoMetai": "03-29-1940"
+      }
+    ],
     "albumai": {
-      "žanras": [
+      "zanras": [
         {
           "stilius": "Classic",
           "albumas": [
@@ -89,14 +87,14 @@
               "numeris": "04571",
               "pavadinimas": "And the Waltz Goes On",
               "autorius": { "ref": "a6" },
-              "išleidimoMetai": "2011",
+              "isleidimoMetai": "2011",
               "kaina": "12.34"
             },
             {
               "numeris": "72039",
               "pavadinimas": "Piano",
               "autorius": { "ref": "a7" },
-              "išleidimoMetai": "2017",
+              "isleidimoMetai": "2017",
               "kaina": "12.59"
             },
             {
@@ -106,7 +104,7 @@
                 { "ref": "a9" },
                 { "ref": "a10" }
               ],
-              "išleidimoMetai": "1987",
+              "isleidimoMetai": "1987",
               "kaina": "6.24"
             }
           ]
@@ -118,42 +116,42 @@
               "numeris": "45001",
               "pavadinimas": "Bad",
               "autorius": { "ref": "a11" },
-              "išleidimoMetai": "1987",
+              "isleidimoMetai": "1987",
               "kaina": "9.99"
             },
             {
               "numeris": "00001",
               "pavadinimas": "Stages",
               "autorius": { "ref": "a1" },
-              "išleidimoMetai": "2015",
+              "isleidimoMetai": "2015",
               "kaina": "13.63"
             },
             {
               "numeris": "04742",
               "pavadinimas": "All That Echoes",
               "autorius": { "ref": "a1" },
-              "išleidimoMetai": "2013",
+              "isleidimoMetai": "2013",
               "kaina": "11.03"
             },
             {
               "numeris": "71839",
               "pavadinimas": "Joanne",
               "autorius": { "ref": "a3" },
-              "išleidimoMetai": "2016",
+              "isleidimoMetai": "2016",
               "kaina": "10.08"
             },
             {
               "numeris": "90001",
               "pavadinimas": "Bangerz",
               "autorius": { "ref": "a5" },
-              "išleidimoMetai": "2013",
+              "isleidimoMetai": "2013",
               "kaina": "10.99"
             },
             {
               "numeris": "97401",
               "pavadinimas": "I Look to You",
               "autorius": { "ref": "a8" },
-              "išleidimoMetai": "2009",
+              "isleidimoMetai": "2009",
               "kaina": "6.88"
             }
           ]
@@ -168,14 +166,14 @@
                 { "ref": "a3" },
                 { "ref": "a4" }
               ],
-              "išleidimoMetai": "2014",
+              "isleidimoMetai": "2014",
               "kaina": "12.62"
             },
             {
               "numeris": "09901",
               "pavadinimas": "The Astrud Gilberto Album",
               "autorius": { "ref": "a12" },
-              "išleidimoMetai": "2008",
+              "isleidimoMetai": "2008",
               "kaina": "10.70"
             }
           ]
@@ -187,14 +185,14 @@
               "numeris": "77739",
               "pavadinimas": "Lennon Legend: The Very Best of John Lennon",
               "autorius": { "ref": "a2" },
-              "išleidimoMetai": "1997",
+              "isleidimoMetai": "1997",
               "kaina": "1.45"
             },
             {
               "numeris": "11741",
               "pavadinimas": "Messenger Of The Gods: The Singles Collection",
               "autorius": { "ref": "a9" },
-              "išleidimoMetai": "2016",
+              "isleidimoMetai": "2016",
               "kaina": "13.24"
             }
           ]
