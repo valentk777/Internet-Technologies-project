@@ -5,6 +5,7 @@
   xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.wikipedia.org XMLSchema.xsd"
 >
+  
   <aut:autoriai>
     <aut:autorius id="a1">
       <aut:vardas>Josh</aut:vardas>
