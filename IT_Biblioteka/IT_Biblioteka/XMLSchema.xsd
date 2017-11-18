@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema 
+  xmlns:aut="http://www.wikipedia.org" 
+  attributeFormDefault="unqualified" 
+  elementFormDefault="qualified" 
+  targetNamespace="http://www.wikipedia.org" 
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <!--  simpleType -->
+  <xs:simpleType name="idTipas">
+    <xs:restriction base= "xs:string">
+      <xs:pattern value="a[0-9][0-9]*" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="skaiciuTipas">
+    <xs:restriction base="xs:integer">
+      <xs:pattern value="[0-9]{4}" />
+    </xs:restriction>
+  </xs:simpleType>
+    
+  <xs:simpleType name="NumerisListTipas">
+    <xs:list itemType="aut:skaiciuTipas"/>
+  </xs:simpleType>
+
+  <!--  complexType su simpleContent -->
+
+  <xs:complexType name="atlikejasTipas">
+    <xs:simpleContent>
+      <xs:extension base="aut:idTipas">
+        <xs:attribute name="ref" type="aut:idTipas" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="GrieztasNumerisListTipas">
+    <xs:simpleContent>
+      <xs:restriction base="aut:NumerisListTipas">
+        <xs:minInclusive value="2"/>
+      </xs:restriction>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <!--  complexType su complexContent -->
+
+  <xs:complexType name="albumasSuMiestuTipas">
+    <xs:complexContent>
+      <xs:extension base="aut:albumasTipas">
+        <xs:attribute name="miestas" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="autoriusTipas_beGimimoVietos">
+    <xs:complexContent>
+      <xs:restriction base="aut:autoriusTipas">
+        <xs:sequence minOccurs="1">
+        <xs:choice>
+          <xs:sequence>
+            <xs:element name="vardas" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="pavarde" type="xs:string" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence> 
+          <xs:element name="Slapyvardis" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        </xs:choice>
+          <xs:element name="gimimoMetai" type="xs:date" minOccurs="1" maxOccurs="1"/>
+          <xs:element name="mirtiesMetai" type="xs:date" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="aut:idTipas" use="required"/>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <!--  pagrindine schema -->
+  <xs:complexType name="albumasTipas">
+    <xs:sequence>
+      <xs:element name="pavadinimas" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="atlikejas" type="aut:atlikejasTipas" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="isleidimoMetai" type="aut:skaiciuTipas" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="kaina" type="xs:decimal" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="numeris" type="aut:NumerisListTipas" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="autoriusTipas">
+    <xs:sequence minOccurs="1">
+        <xs:choice>
+          <xs:sequence>
+            <xs:element name="vardas" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="pavarde" type="xs:string" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence> 
+          <xs:element name="Slapyvardis" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        </xs:choice>
+      <xs:element name="gimimoMetai" type="xs:date" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="mirtiesMetai" type="xs:date" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="gimimoVieta" type="xs:string" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="aut:idTipas" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="zanrasTipas" mixed="true">
+    <xs:sequence>
+      <xs:element name="albumas" type="aut:albumasSuMiestuTipas" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="stilius" type="xs:string" />
+  </xs:complexType>
+
+  <xs:complexType name="autoriaiTipas">
+    <xs:sequence>
+      <xs:element name="autorius" type="aut:autoriusTipas_beGimimoVietos" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="albumaiTipas">
+    <xs:sequence>
+      <xs:element name="zanras" type="aut:zanrasTipas" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DiskografijosTipas">
+    <xs:sequence>
+      <xs:element name="autoriai" type="aut:autoriaiTipas" minOccurs="0"/>
+      <xs:element name="albumai" type="aut:albumaiTipas" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="Diskografija" type="aut:DiskografijosTipas">
+
+    <!-- Raktas -->
+    <xs:key name="autoriaiRaktas">
+      <xs:selector xpath="aut:autoriai/aut:autorius"/>
+      <xs:field xpath="@id"/>
+    </xs:key>
+
+    <xs:keyref name="AtlikejaiRefer" refer="aut:autoriaiRaktas">
+      <xs:selector xpath="aut:albumai/aut:zanras/aut:albumas/aut:atlikejas"/>
+      <xs:field xpath="@ref"/>
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

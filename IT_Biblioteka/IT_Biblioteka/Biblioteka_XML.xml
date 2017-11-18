@@ -1,172 +1,178 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<!-- Muzikos bibliotekos XML versija -->
-<Diskografija xmlns="https://www.amazon.co.uk" xmlns:aut="http://www.wikipedia.org">
+﻿<!-- Muzikos bibliotekos XML versija -->
+<Diskografija 
+  xmlns="http://www.wikipedia.org" 
+  xmlns:aut="http://www.wikipedia.org"
+  xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.wikipedia.org XMLSchema.xsd"
+>
+  
   <aut:autoriai>
-    <aut:autorius id="a1">      
+    <aut:autorius id="a1">
       <aut:vardas>Josh</aut:vardas>
-      <aut:pavardė>Groban</aut:pavardė>
+      <aut:pavarde>Groban</aut:pavarde>
       <aut:gimimoMetai>02-27-1981</aut:gimimoMetai>
-      <aut:mirtiesMetai></aut:mirtiesMetai>   
+      <aut:mirtiesMetai></aut:mirtiesMetai>
     </aut:autorius>
     <aut:autorius id="a2">
       <aut:vardas>John</aut:vardas>
-      <aut:pavardė>Lennon</aut:pavardė>
+      <aut:pavarde>Lennon</aut:pavarde>
       <aut:gimimoMetai>10-9-1940</aut:gimimoMetai>
-      <aut:mirtiesMetai>12-08-1980</aut:mirtiesMetai>   
+      <aut:mirtiesMetai>12-08-1980</aut:mirtiesMetai>
     </aut:autorius>
-      <aut:autorius id="a3">
+    <aut:autorius id="a3">
       <aut:vardas>Lady</aut:vardas>
-      <aut:pavardė>Gaga</aut:pavardė>
+      <aut:pavarde>Gaga</aut:pavarde>
       <aut:gimimoMetai>03-28-1986</aut:gimimoMetai>
       <aut:mirtiesMetai></aut:mirtiesMetai>
     </aut:autorius>
     <aut:autorius id="a4">
       <aut:vardas>Tony</aut:vardas>
-      <aut:pavardė>Bennett</aut:pavardė>
+      <aut:pavarde>Bennett</aut:pavarde>
       <aut:gimimoMetai>09-03-1926</aut:gimimoMetai>
       <aut:mirtiesMetai></aut:mirtiesMetai>
     </aut:autorius>
     <aut:autorius id="a5">
       <aut:vardas>Miley</aut:vardas>
-      <aut:pavardė>Cyrus</aut:pavardė>
+      <aut:pavarde>Cyrus</aut:pavarde>
       <aut:gimimoMetai>11-23-1992</aut:gimimoMetai>
       <aut:mirtiesMetai></aut:mirtiesMetai>
     </aut:autorius>
     <aut:autorius id="a6">
       <aut:vardas>Andre</aut:vardas>
-      <aut:pavardė>Rieu</aut:pavardė>
+      <aut:pavarde>Rieu</aut:pavarde>
       <aut:gimimoMetai>10-01-1949</aut:gimimoMetai>
       <aut:mirtiesMetai></aut:mirtiesMetai>
     </aut:autorius>
     <aut:autorius id="a7">
       <aut:vardas>Benny</aut:vardas>
-      <aut:pavardė>Andersson</aut:pavardė>
+      <aut:pavarde>Andersson</aut:pavarde>
       <aut:gimimoMetai>12-16-1946</aut:gimimoMetai>
       <aut:mirtiesMetai></aut:mirtiesMetai>
     </aut:autorius>
     <aut:autorius id="a8">
       <aut:vardas>Whitney</aut:vardas>
-      <aut:pavardė>Houston</aut:pavardė>
+      <aut:pavarde>Houston</aut:pavarde>
       <aut:gimimoMetai>08-09-1963</aut:gimimoMetai>
       <aut:mirtiesMetai>02-11-2012</aut:mirtiesMetai>
     </aut:autorius>
     <aut:autorius id="a9">
       <aut:vardas>Freddie</aut:vardas>
-      <aut:pavardė>Mercury</aut:pavardė>
+      <aut:pavarde>Mercury</aut:pavarde>
       <aut:gimimoMetai>09-05-1946</aut:gimimoMetai>
       <aut:mirtiesMetai>11-24-1991</aut:mirtiesMetai>
-    </aut:autorius>  
+    </aut:autorius>
     <aut:autorius id="a10">
       <aut:vardas>Montserrat</aut:vardas>
-      <aut:pavardė>Caballé</aut:pavardė>
+      <aut:pavarde>Caballé</aut:pavarde>
       <aut:gimimoMetai>04-12-1933</aut:gimimoMetai>
       <aut:mirtiesMetai></aut:mirtiesMetai>
-    </aut:autorius>    
+    </aut:autorius>
     <aut:autorius id="a11">
       <aut:vardas>Michael</aut:vardas>
-      <aut:pavardė>Jackson</aut:pavardė>
+      <aut:pavarde>Jackson</aut:pavarde>
       <aut:gimimoMetai>08-29-1958</aut:gimimoMetai>
       <aut:mirtiesMetai>06-25-2009</aut:mirtiesMetai>
-    </aut:autorius>   
+    </aut:autorius>
     <aut:autorius id="a12">
       <aut:vardas>Astrud</aut:vardas>
-      <aut:pavardė>Gilberto</aut:pavardė>
+      <aut:pavarde>Gilberto</aut:pavarde>
       <aut:gimimoMetai>03-29-1940</aut:gimimoMetai>
       <aut:mirtiesMetai></aut:mirtiesMetai>
-    </aut:autorius>   
+    </aut:autorius>
   </aut:autoriai>
-  
-  <albumai> 
-    <žanras stilius ="Classic">
-      <albumas numeris ="04571">
+
+  <albumai>
+    <zanras stilius ="Classic">
+      Klasikine muzika atsidaro ...
+      <albumas numeris ="04571 7894">
         <pavadinimas>And the Waltz Goes On</pavadinimas>
-        <aut:autorius ref="a6"/>
-        <išleidimoMetai>2011</išleidimoMetai>
+        <aut:atlikejas ref="a6"/>
+        <isleidimoMetai>2011</isleidimoMetai>
         <kaina>12.34</kaina>
       </albumas>
-      <albumas numeris ="72039">
+      <albumas numeris ="72039 7894">
         <pavadinimas>Piano</pavadinimas>
-        <aut:autorius ref="a7"/>
-        <išleidimoMetai>2017</išleidimoMetai>
+        <aut:atlikejas ref="a7"/>
+        <isleidimoMetai>2017</isleidimoMetai>
         <kaina>12.59</kaina>
-      </albumas>    
-      <albumas numeris ="72449">
+      </albumas>
+      <albumas numeris ="72449 7894">
         <pavadinimas>Barcelona</pavadinimas>
-        <aut:autorius ref="a9"/>
-        <aut:autorius ref="a10"/>
-        <išleidimoMetai>1987</išleidimoMetai>
+        <aut:atlikejas ref="a9"/>
+        <aut:atlikejas ref="a10"/>
+        <isleidimoMetai>1987</isleidimoMetai>
         <kaina>6.24</kaina>
-      </albumas>  
-    </žanras>
+      </albumas>
+    </zanras>
 
-    <žanras stilius ="Pop">
-      <albumas numeris ="45001">
+    <zanras stilius ="Pop">
+      <albumas numeris ="45001 7894">
         <pavadinimas>Bad</pavadinimas>
-        <aut:autorius ref="a11"/>
-        <išleidimoMetai>1987</išleidimoMetai>
+        <aut:atlikejas ref="a11"/>
+        <isleidimoMetai>1987</isleidimoMetai>
         <kaina>9.99</kaina>
       </albumas>
-      <albumas numeris ="00001">
+      <albumas numeris ="00001 7894">
         <pavadinimas>Stages</pavadinimas>
-        <aut:autorius ref="a1"/>
-        <išleidimoMetai>2015</išleidimoMetai>
+        <aut:atlikejas ref="a1"/>
+        <isleidimoMetai>2015</isleidimoMetai>
         <kaina>13.63</kaina>
-      </albumas>  
-      <albumas numeris ="04742">
+      </albumas>
+      <albumas numeris ="04742 7894">
         <pavadinimas>All That Echoes</pavadinimas>
-        <aut:autorius ref="a1"/>
-        <išleidimoMetai>2013</išleidimoMetai>
+        <aut:atlikejas ref="a1"/>
+        <isleidimoMetai>2013</isleidimoMetai>
         <kaina>11.03</kaina>
       </albumas>
-      <albumas numeris ="71839">
+      <albumas numeris ="71839 7894">
         <pavadinimas>Joanne</pavadinimas>
-        <aut:autorius ref="a3"/>
-        <išleidimoMetai>2016</išleidimoMetai>
+        <aut:atlikejas ref="a3"/>
+        <isleidimoMetai>2016</isleidimoMetai>
         <kaina>10.08</kaina>
       </albumas>
-      <albumas numeris ="90001">
+      <albumas numeris ="90001 7894">
         <pavadinimas>Bangerz</pavadinimas>
-        <aut:autorius ref="a5"/>
-        <išleidimoMetai>2013</išleidimoMetai>
+        <aut:atlikejas ref="a5"/>
+        <isleidimoMetai>2013</isleidimoMetai>
         <kaina>10.99</kaina>
       </albumas>
-      <albumas numeris ="97401">
+      <albumas numeris ="97401 7894">
         <pavadinimas>I Look to You</pavadinimas>
-        <aut:autorius ref="a8"/>
-        <išleidimoMetai>2009</išleidimoMetai>
+        <aut:atlikejas ref="a8"/>
+        <isleidimoMetai>2009</isleidimoMetai>
         <kaina>6.88</kaina>
       </albumas>
-    </žanras>
+    </zanras>
 
-    <žanras stilius ="Jazz">
-      <albumas numeris ="07001">
+    <zanras stilius ="Jazz">
+      <albumas numeris ="07001 7894" salis ="Vilnius">
         <pavadinimas>Cheek to Cheek</pavadinimas>
-        <aut:autorius ref="a3"/>
-        <aut:autorius ref="a4"/>
-        <išleidimoMetai>2014</išleidimoMetai>
+        <aut:atlikejas ref="a3"/>
+        <aut:atlikejas ref="a4"/>
+        <isleidimoMetai>2014</isleidimoMetai>
         <kaina>12.62</kaina>
       </albumas>
-      <albumas numeris ="09901">
+      <albumas numeris ="09901 7894">
         <pavadinimas>The Astrud Gilberto Album</pavadinimas>
-        <aut:autorius ref="a12"/>
-        <išleidimoMetai>2008</išleidimoMetai>
+        <aut:atlikejas ref="a12"/>
+        <isleidimoMetai>2008</isleidimoMetai>
         <kaina>10.70</kaina>
       </albumas>
-    </žanras>
-    
-    <žanras stilius ="Rock">
-      <albumas numeris ="77739">
+    </zanras>
+
+    <zanras stilius ="Rock">
+      <albumas numeris ="77739 7894">
         <pavadinimas>Lennon Legend: The Very Best of John Lennon</pavadinimas>
-        <aut:autorius ref="a2"/>
-        <išleidimoMetai>1997</išleidimoMetai>
+        <aut:atlikejas ref="a2"/>
+        <isleidimoMetai>1997</isleidimoMetai>
         <kaina>1.45</kaina>
-      </albumas>  
-      <albumas numeris ="11741">
+      </albumas>
+      <albumas numeris ="11741 7894">
         <pavadinimas>Messenger Of The Gods: The Singles Collection</pavadinimas>
-        <aut:autorius ref="a9"/>
-        <išleidimoMetai>2016</išleidimoMetai>
+        <aut:atlikejas ref="a9"/>
+        <isleidimoMetai>2016</isleidimoMetai>
         <kaina>13.24</kaina>
       </albumas>
-    </žanras>
-  </albumai> 
+    </zanras>
+  </albumai>
 </Diskografija>
