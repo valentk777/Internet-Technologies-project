@@ -1,0 +1,17 @@
+﻿body {
+    color: azure;
+    background-color: forestgreen;
+}
+
+tr {
+    color: green;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: green;
+}
+
+img {
+    width: 250px;
+}
