@@ -11,7 +11,7 @@
         "id": "a2",
         "vardas": "John",
         "pavarde": "Lennon",
-        "gimimoMetai": "10-9-1940",
+        "gimimoMetai": "10-09-1940",
         "mirtiesMetai": "12-08-1980"
       },
       {
@@ -81,32 +81,36 @@
     "albumai": {
       "zanras": [
         {
-          "stilius": "Classic",
+          "stilius": "Klasika",
+          "text": "Klasikine muzika atsirado...",
           "albumas": [
             {
-              "numeris": "04571",
+              "numeris": 4571,
               "pavadinimas": "And the Waltz Goes On",
-              "autorius": { "ref": "a6" },
-              "isleidimoMetai": "2011",
-              "kaina": "12.34",
+              "autorius": {
+                "ref": "a6"
+              },
+              "isleidimoMetai": 2011,
+              "kaina": 12.34,
               "busena": "Perklausyta"
             },
             {
-              "numeris": "72039",
+              "numeris": 72039,
               "pavadinimas": "Piano",
-              "autorius": { "ref": "a7" },
-              "isleidimoMetai": "2017",
-              "kaina": "12.59"
+              "autorius": {
+                "ref": "a7"
+              },
+              "isleidimoMetai": 2017,
+              "kaina": 12.59
             },
             {
-              "numeris": "72449",
+              "numeris": 72449,
               "pavadinimas": "Barcelona",
-              "autorius": [
-                { "ref": "a9" },
-                { "ref": "a10" }
-              ],
-              "isleidimoMetai": "1987",
-              "kaina": "6.24",
+              "autorius": {
+                "ref": "a10"
+              },
+              "isleidimoMetai": 1987,
+              "kaina": 6.24,
               "busena": "Neperklausyta"
             }
           ]
@@ -115,46 +119,58 @@
           "stilius": "Pop",
           "albumas": [
             {
-              "numeris": "45001",
+              "numeris": 45001,
               "pavadinimas": "Bad",
-              "autorius": { "ref": "a11" },
-              "isleidimoMetai": "1987",
-              "kaina": "9.99"
+              "autorius": {
+                "ref": "a11"
+              },
+              "isleidimoMetai": 1987,
+              "kaina": 9.99
             },
             {
-              "numeris": "00001",
+              "numeris": 1,
               "pavadinimas": "Stages",
-              "autorius": { "ref": "a1" },
-              "isleidimoMetai": "2015",
-              "kaina": "13.63"
+              "autorius": {
+                "ref": "a1"
+              },
+              "isleidimoMetai": 2015,
+              "kaina": 13.63
             },
             {
-              "numeris": "04742",
+              "numeris": 4742,
               "pavadinimas": "All That Echoes",
-              "autorius": { "ref": "a1" },
-              "isleidimoMetai": "2013",
-              "kaina": "11.03"
+              "autorius": {
+                "ref": "a1"
+              },
+              "isleidimoMetai": 2013,
+              "kaina": 11.03
             },
             {
-              "numeris": "71839",
+              "numeris": 71839,
               "pavadinimas": "Joanne",
-              "autorius": { "ref": "a3" },
-              "isleidimoMetai": "2016",
-              "kaina": "10.08"
+              "autorius": {
+                "ref": "a3"
+              },
+              "isleidimoMetai": 2016,
+              "kaina": 10.08
             },
             {
-              "numeris": "90001",
+              "numeris": 90001,
               "pavadinimas": "Bangerz",
-              "autorius": { "ref": "a5" },
-              "isleidimoMetai": "2013",
-              "kaina": "10.99"
+              "autorius": {
+                "ref": "a5"
+              },
+              "isleidimoMetai": 2013,
+              "kaina": 10.99
             },
             {
-              "numeris": "97401",
+              "numeris": 97401,
               "pavadinimas": "I Look to You",
-              "autorius": { "ref": "a8" },
-              "isleidimoMetai": "2009",
-              "kaina": "6.88"
+              "autorius": {
+                "ref": "a8"
+              },
+              "isleidimoMetai": 2009,
+              "kaina": 6.88
             }
           ]
         },
@@ -162,21 +178,22 @@
           "stilius": "Jazz",
           "albumas": [
             {
-              "numeris": "07001",
+              "numeris": 7001,
               "pavadinimas": "Cheek to Cheek",
-              "autorius": [
-                { "ref": "a3" },
-                { "ref": "a4" }
-              ],
-              "isleidimoMetai": "2014",
-              "kaina": "12.62"
+              "autorius": {
+                "ref": "a4"
+              },
+              "isleidimoMetai": 2014,
+              "kaina": 12.62
             },
             {
-              "numeris": "09901",
+              "numeris": 9901,
               "pavadinimas": "The Astrud Gilberto Album",
-              "autorius": { "ref": "a12" },
-              "isleidimoMetai": "2008",
-              "kaina": "10.70"
+              "autorius": {
+                "ref": "a12"
+              },
+              "isleidimoMetai": 2008,
+              "kaina": 10.7
             }
           ]
         },
@@ -184,18 +201,22 @@
           "stilius": "Rock",
           "albumas": [
             {
-              "numeris": "77739",
+              "numeris": 77739,
               "pavadinimas": "Lennon Legend: The Very Best of John Lennon",
-              "autorius": { "ref": "a2" },
-              "isleidimoMetai": "1997",
-              "kaina": "1.45"
+              "autorius": {
+                "ref": "a2"
+              },
+              "isleidimoMetai": 1997,
+              "kaina": 1.45
             },
             {
-              "numeris": "11741",
+              "numeris": 11741,
               "pavadinimas": "Messenger Of The Gods: The Singles Collection",
-              "autorius": { "ref": "a9" },
-              "isleidimoMetai": "2016",
-              "kaina": "13.24"
+              "autorius": {
+                "ref": "a1"
+              },
+              "isleidimoMetai": 2016,
+              "kaina": 13.24
             }
           ]
         }
