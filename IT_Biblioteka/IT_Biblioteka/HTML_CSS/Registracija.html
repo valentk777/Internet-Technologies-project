@@ -6,47 +6,49 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <section>
-        <form name="registracija" action="Pagrindinis.html" method="post">
-            <table>
-                <tr>
-                    <th rowspan="7"><img src="logo.png" title="Logo" alt="logo" width="250" height="224"></th>
-                    <th colspan="3">Prisijungimas</th>
-                </tr>
-                <tr>
-                    <td>Prisijungimo vardas</td>
-                    <td colspan="2"><input type="text" name="Name" placeholder="Vardas" required></td>
-                </tr>
-                <tr>
-                    <td>Slaptažodis</td>
-                    <td colspan="2"><input type="password" name="password" placeholder="Slaptažodis" required></td>
-                </tr>
-                <tr>
-                    <td>Elektroninis paštas</td>
-                    <td colspan="2"><input type="email" name="email" placeholder="Elektroninis paštas" required></td>
-                </tr>
-                <tr>
-                    <td>Vartotojo tipas</td>
-                    <td colspan="2">
-                        <select name="UserType">
-                            <option value="k">Komercinis vartotojas</option>
-                            <option value="s">Studentas</option>
-                            <option value="nvo">Nevyriausybinė organizacija</option>
-                            <option value="kia">Kita</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3"><input type="radio" name="verify" value="yes" required> Su <a href="taisykles.html">taisyklėmis</a> susipažinau</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="submit" value="Siųsti"></td>
-                    <td><input type="reset" value="Išvalyti"></td>
-                </tr>
-            </table>
-        </form>
-    </section>
+    <div id="box">
+        <section>
+            <form name="registracija" action="Pagrindinis.html" method="put">
+                <table class="LoginTable">
+                    <tr>
+                        <th rowspan="7" ><img src="logo.png" title="Logo" alt="logo" width="250" height="224" class="pictureInTable"></th>
+                        <th colspan="3" class="center">Prisijungimas</th>
+                    </tr>
+                    <tr>
+                        <td id="RightText">Prisijungimo vardas</td>
+                        <td colspan="2" id="LeftText"><input type="text" name="Name" placeholder="Vardas" required></td>
+                    </tr>
+                    <tr>
+                        <td id="RightText">Slaptažodis</td>
+                        <td colspan="2" id="LeftText"><input type="password" name="password" placeholder="Slaptažodis" required></td>
+                    </tr>
+                    <tr>
+                        <td id="RightText">Elektroninis paštas</td>
+                        <td colspan="2" id="LeftText"><input type="email" name="email" placeholder="Elektroninis paštas" required></td>
+                    </tr>
+                    <tr>
+                        <td id="RightText">Vartotojo tipas</td>
+                        <td colspan="2" id="LeftText">
+                            <select name="UserType">
+                                <option value="k">Komercinis vartotojas</option>
+                                <option value="s">Studentas</option>
+                                <option value="nvo">Nevyriausybinė organizacija</option>
+                                <option value="kia">Kita</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="radio" name="verify" value="yes" required> Su <a href="Taisykles.html">taisyklėmis</a> susipažinau</td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Siųsti" class="SubmitButtonGreen"></td>
+                        <td><input type="reset" value="Išvalyti" class="SubmitButton"></td>
+                        <td><a href="Prisijungimas.html"><input type="button" value="Grižti" class="SubmitButton"></a></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </div>
     <footer>
         <p>Page Created by: Valentinas Kaminskas</p>
         <p>

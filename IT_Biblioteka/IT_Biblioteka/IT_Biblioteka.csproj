@@ -154,6 +154,7 @@
     <Content Include="HTML_CSS\kitty.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="HTML_CSS\Taisykles.html" />
     <Content Include="HTML_CSS\top.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

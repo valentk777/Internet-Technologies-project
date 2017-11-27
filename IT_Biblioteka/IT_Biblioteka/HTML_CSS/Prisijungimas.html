@@ -6,38 +6,45 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
 </head>
 <body>
-    <header>
-        <h1>Mano Diskografija</h1>
-    </header>
+    <div id="box">
+        <section>
+            <header class="center">
+                <h1>Mano Diskografija</h1>
+            </header>
+            <form name="prisijungimas" action="Pagrindinis.html" method="get">
+                <table class="LoginTable">
+                    <tr>
+                        <th colspan="2"><img src="logo.png" title="Logo" alt="logo"></th>
+                    </tr>
+                    <tr>
+                        <td id="RightText">Prisijungimo vardas:</td>
+                        <td><input type="text" name="Name" value="" required placeholder="Vardas" /></td>
+                    </tr>
+                    <tr>
+                        <td id="RightText">slaptažodis:</td>
+                        <td><input type="password" name="Password" value="" placeholder="Slaptažodis" required /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" name="Submit" value="Prisijungti" class="SubmitButtonGreen"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><a href="registracija.html">Neturite vartotojo?</a></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </div>
+        <footer>
+            <p>Page Created by: Valentinas Kaminskas</p>
+            <p>
+                Contact information:
+                <a href="mailto:valentinas.kaminskas@mif.stud.vu.lt">
+                    valentinas.kaminskas@mif.stud.vu.lt
+                </a>.
+            </p>
+        </footer>
 
-    <form name="prisijungimas" action="Pagrindinis.html" method="get">
-        <table>
-            <tr>
-                <th colspan="2"><img src="logo.png" title="Logo" alt="logo"></th>
-            </tr>
-            <tr>
-                <td>Prisijungimo vardas:</td>
-                <td><input type="text" name="Name" value="" required placeholder="Vardas" /></td>
-            </tr>
-            <tr>
-                <td>slaptažodis:</td>
-                <td><input type="password" name="Password" value="" placeholder="Slaptažodis" required /></td>
-            </tr>
-            <tr>
-                <td colspan="2"><input type="submit" name="Submit" value="Prisijungti" /></td>
-            </tr>
-            <tr>
-                <td colspan="2"><a href="registracija.html">Neturite vartotojo?</a></td>
-            </tr>
-        </table>
-    </form>
-    <footer>
-        <p>Page Created by: Valentinas Kaminskas</p>
-        <p>
-            Contact information: <a href="mailto:valentinas.kaminskas@mif.stud.vu.lt">
-                valentinas.kaminskas@mif.stud.vu.lt
-            </a>.
-        </p>
-    </footer>
 </body>
 </html>
