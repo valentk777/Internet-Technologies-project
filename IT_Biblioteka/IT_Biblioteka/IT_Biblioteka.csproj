@@ -135,7 +135,7 @@
     <Content Include="HTML_CSS\style.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="HTML_CSS\StyleSheet2.css" />
+    <Content Include="HTML_CSS\phone.css" />
     <Content Include="HTML_CSS\Albumai.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -1,4 +1,4 @@
-﻿@media (min-width: 1060px) {
+﻿@media (min-width: 700px) and (max-width: 1059px) {
     body {
         background-color: #B0B0B0;
         font-family: 'Tw Cen MT';
@@ -163,11 +163,8 @@
             display: block;
             color: white;
             text-align: center;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            padding-right: 80px;
+            padding: 30px;
             text-decoration: none;
-            padding-left: 80px;
             border-radius: 10px;
         }
 
