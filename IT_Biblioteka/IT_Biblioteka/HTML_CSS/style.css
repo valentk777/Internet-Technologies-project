@@ -6,18 +6,26 @@ h1 {
     color: #A82C20;
 }
 
-.center > h1 {
-    color: #E0BB6C;
-    font-family: Script;
-    font-size: 60px;
-}
-
-.center > h3 {
+.center {
+    margin: auto;
+    background-color: #313236;
     color: #E0BB6C;
     font-size: 30px;
-    text-align: left;
-    padding-left: 50px;
 }
+
+    .center > h1 {
+        color: inherit;
+        font-family: Script;
+        font-size: 60px;
+        margin: inherit;
+    }
+
+    .center > h3 {
+        font-size: 30px;
+        text-align: left;
+        padding-left: 50px;
+        margin: inherit;
+    }
 
 #box {
     background-color: lightgrey;
@@ -50,13 +58,6 @@ section header {
     font-family: Impact;
     color: #2E2F33;
     font-size: 40px;
-}
-
-.center {
-    margin: auto;
-    background-color: #313236;
-    color: #E0BB6C;
-    font-size: 30px;
 }
 
 .LoginTable {
@@ -163,8 +164,8 @@ li {
         padding-top: 30px;
         padding-bottom: 30px;
         padding-right: 110px;
-        padding-left: 110px;
         text-decoration: none;
+        padding-left: 110px;
         border-radius: 10px;
     }
 
@@ -178,16 +179,20 @@ li {
     padding-left: 20px;
 }
 
-.icon {
+img[alt="top"] {
     width: 25px;
     height: 25px;
     border-radius: 10px;
 }
 
 article {
-text-align: left;
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
-article h5 {
-    font-size: 20px;
-}
+    article h5 {
+        font-size: 20px;
+        padding-right: 15px;
+        padding-left: 30px;
+    }
