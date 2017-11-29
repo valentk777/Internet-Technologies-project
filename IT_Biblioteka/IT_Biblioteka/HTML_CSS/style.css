@@ -90,11 +90,11 @@ section header {
     filter: blur(20px);
 }
 
-#RightText {
+.RightText {
     text-align: right;
 }
 
-#LeftText {
+.LeftText {
     text-align: left;
 }
 
