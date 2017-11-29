@@ -1,0 +1,92 @@
+﻿@media print {
+    body {
+        background: none;
+    }
+
+    h1 {
+        color: #000 !important;
+    }
+
+    .center {
+        margin: 0;
+        background-color: white;
+        color: #000;
+        font-size:15px;
+    }
+    
+    .center > h1 {
+        color: inherit;
+        margin: 0;
+        font-size: 30px;
+    }
+    
+    .center > h3 {
+        padding: 0;
+        margin: 0;
+    }
+
+    #box {
+        background-color: white;
+        padding: 0;
+    }
+
+    img {
+        width: 350px;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+    footer {
+        background-color: white;
+        color: #000;
+        font-size:10px;
+    }
+
+    section header {
+        color: #000;
+        font-size: 10px;
+    }
+
+    .LoginTable, .NotImplementedLink {
+        margin: 0;
+    }
+
+    #imageBlur, #NotImplementedPicture {
+        background-image: none;
+    }
+
+    .SubmitButton, .SubmitButtonGreen {
+        background-color: darkgrey;
+        color: #000;
+        border: none;
+    }
+
+    .pictureInTable {
+        width: 500px;
+    }
+
+    #TitleTable {
+        color: #000;
+    }
+
+    ul, .menuIcon, nav {
+        display: none;
+    }
+
+    img[alt="top"] {
+        width: 25px;
+        height: 25px;
+        border-radius: 10px;
+    }
+
+    article {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+        article h5 {
+            font-size: 10px;
+            padding: 0;
+        }
+}
