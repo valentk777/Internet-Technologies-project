@@ -14,18 +14,18 @@ h1 {
     font-size: 30px;
 }
 
-    .center > h1 {
-        color: inherit;
-        font-family: Script;
-        font-size: 60px;
-        margin: inherit;
-    }
+.center > h1 {
+    color: inherit;
+    font-family: Script;
+    font-size: 60px;
+    margin: inherit;
+}
 
-    .center > h3 {
-        text-align: left;
-        padding-left: 50px;
-        margin: inherit;
-    }
+.center > h3 {
+    text-align: left;
+    padding-left: 50px;
+    margin: inherit;
+}
 
 #box {
     background-color: lightgrey;
@@ -109,14 +109,14 @@ section header {
     width: 130px;
 }
 
-    .SubmitButton:hover {
-        background: #4C0509;
-        color: #fff;
-        border: 1px #eee;
-        border-radius: 5px;
-        box-shadow: 5px 5px 5px #eee;
-        text-shadow: none;
-    }
+.SubmitButton:hover {
+    background: #4C0509;
+    color: #fff;
+    border: 1px #eee;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
 
 .SubmitButtonGreen {
     background: #68917F;
@@ -129,14 +129,14 @@ section header {
     width: 130px;
 }
 
-    .SubmitButtonGreen:hover {
-        background: #1C2218;
-        color: #fff;
-        border: 1px #eee;
-        border-radius: 5px;
-        box-shadow: 5px 5px 5px #eee;
-        text-shadow: none;
-    }
+.SubmitButtonGreen:hover {
+    background: #1C2218;
+    color: #fff;
+    border: 1px #eee;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
 
 .pictureInTable {
     width: 500px;
@@ -158,21 +158,21 @@ li {
     float: left;
 }
 
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-right: 80px;
-        text-decoration: none;
-        padding-left: 80px;
-        border-radius: 10px;
-    }
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 80px;
+    text-decoration: none;
+    padding-left: 80px;
+    border-radius: 10px;
+}
 
-        li a:hover {
-            background-color: #68917F;
-        }
+li a:hover {
+    background-color: #68917F;
+}
 
 .menuIcon {
     width: 115px;
@@ -192,8 +192,8 @@ article {
     padding-left: 20px;
 }
 
-    article h5 {
-        font-size: 20px;
-        padding-right: 15px;
-        padding-left: 30px;
-    }
+article h5 {
+    font-size: 20px;
+    padding-right: 15px;
+    padding-left: 30px;
+}
